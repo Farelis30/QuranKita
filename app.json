@@ -5,9 +5,26 @@
       "bundler": "metro"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow location to use your location."
+        }
+      ]
     ],
     "name": "QuranKitaProject",
-    "slug": "QuranKitaProject"
+    "slug": "QuranKitaProject",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "24b552ac-805b-4f5a-8824-463ad3693107"
+      }
+    },
+    "android": {
+      "package": "com.farelyudistira.QuranKitaProject"
+    }
   }
 }
